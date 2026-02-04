@@ -5,65 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BR-ECHO | Brazilian Extremist Content Hashing Observatory</title>
     <style>
-        body { font-family: -apple-system, system-ui, sans-serif; line-height: 1.6; color: #121212; max-width: 850px; margin: 0 auto; padding: 40px 20px; background-color: #ffffff; }
+        body { font-family: -apple-system, system-ui, sans-serif; line-height: 1.6; color: #121212; max-width: 900px; margin: 0 auto; padding: 40px 20px; background-color: #ffffff; }
         
-        /* Logos Institucionais no Topo */
+        /* Logos Institucionais no Topo - Aumentadas para 100px */
         .institutional-logos { 
             display: flex; 
             justify-content: space-between; 
             align-items: center; 
             margin-bottom: 50px; 
-            opacity: 0.8;
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
         }
-        .institutional-logos img { height: 45px; object-fit: contain; }
+        .institutional-logos img { height: 100px; width: auto; object-fit: contain; }
         
         /* Logo Principal do Projeto */
         header { text-align: center; margin-bottom: 60px; }
-        .main-logo { width: 320px; max-width: 100%; height: auto; margin-bottom: 20px; }
+        .main-logo { width: 450px; max-width: 100%; height: auto; margin-bottom: 25px; border-radius: 8px; }
         
         .project-tag { 
-            background: #0047bb; /* Azul da sua logo */
+            background: #0047bb; 
             color: white; 
-            padding: 6px 18px; 
+            padding: 8px 22px; 
             border-radius: 4px; 
-            font-size: 0.85em; 
+            font-size: 0.95em; 
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 1px;
+            display: inline-block;
         }
 
         .content { 
             background: #fcfcfc; 
-            padding: 40px; 
+            padding: 45px; 
             border-radius: 8px; 
             border: 1px solid #eee; 
-            box-shadow: 0 4px 12px rgba(0,0,0,0.03); 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.04); 
         }
         
-        h2 { color: #002d72; border-bottom: 2px solid #0047bb; display: inline-block; padding-bottom: 5px; margin-top: 0; }
+        h2 { color: #002d72; border-bottom: 3px solid #0047bb; display: inline-block; padding-bottom: 5px; margin-top: 0; font-size: 1.8em; }
+        
+        /* Alerta de Restrição para Revisores */
+        .restriction-alert { 
+            color: #d32f2f; 
+            font-weight: bold; 
+            border-left: 4px solid #d32f2f; 
+            padding: 15px; 
+            margin: 25px 0; 
+            background: #fff5f5; 
+        }
 
-        footer { margin-top: 80px; text-align: center; font-size: 0.9em; border-top: 1px solid #eee; padding-top: 40px; }
-        .footer-links { margin: 25px 0; }
+        footer { margin-top: 80px; text-align: center; font-size: 0.95em; border-top: 1px solid #eee; padding-top: 50px; padding-bottom: 40px; }
+        .footer-links { margin: 30px 0; }
         .footer-links a { 
             color: #0047bb; 
             text-decoration: none; 
             margin: 0 15px; 
             font-weight: 700; 
-            padding: 10px 20px; 
+            padding: 12px 25px; 
             border: 2px solid #0047bb; 
             border-radius: 4px; 
             transition: 0.2s;
         }
         .footer-links a:hover { background: #0047bb; color: white; }
         
-        .contact-footer { margin-top: 40px; color: #666; font-size: 0.8em; line-height: 1.8; }
+        .contact-footer { margin-top: 40px; color: #555; font-size: 0.85em; line-height: 1.8; }
     </style>
 </head>
 <body>
 
     <div class="institutional-logos">
-        <img src="usp-logo-eps.jpg" alt="USP">
-        <img src="kcl_logo.png" alt="KCL">
+        <img src="usp-logo-eps.jpg" alt="University of São Paulo">
+        <img src="kcl_logo.png" alt="King's College London">
     </div>
 
     <header>
@@ -76,9 +88,13 @@
         <h2>About the Observatory</h2>
         <p>The <strong>Brazilian Extremist Content Hashing Observatory (BR-ECHO)</strong> is an academic, non-commercial research project developed at the <strong>University of São Paulo (USP)</strong> in collaboration with <strong>King’s College London (KCL)</strong>.</p>
         
-        <p><strong>Access Restriction:</strong> This application is a private research tool. Access and use of the BR-ECHO interface and its data are strictly restricted to the project's internal research team and authorized academic collaborators. It is not available for public or commercial use.</p>
+        <div class="restriction-alert">
+            <strong>Access Restriction:</strong> This application is a private research tool. Access to the BR-ECHO interface and its data is strictly restricted to the internal research team and authorized academic collaborators. It is not available for public or commercial use.
+        </div>
         
         <p>Managed by researcher <strong>Ricardo Cabral Penteado</strong>, BR-ECHO utilizes advanced computational linguistics and hashing techniques to monitor and analyze public discourse trends for scholarly purposes.</p>
+        
+        <p>This initiative contributes to the global understanding of digital platform governance and online safety by utilizing the <strong>TikTok Research API</strong> under strict ethical guidelines.</p>
     </main>
 
     <footer>
